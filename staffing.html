@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Staffing Solutions at Hire Via Global</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body data-page="staffing">
+<div id="site-header"></div>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Staffing Solutions</span>
+    <h1>Extra people when the work needs them</h1>
+    <p>Scale your team up for a project, cover a busy season or build a longer-term team, without adding permanent headcount before you are ready.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Engagement types</span>
+      <h2>Choose the arrangement that fits</h2>
+    </div>
+    <div class="grid">
+      <article class="card tilt"><span class="ico" data-i="calendar"></span><h3>Temporary and project</h3><p>People for a fixed project or period. Suited to peaks in workload and one-off pieces of work.</p></article>
+      <article class="card tilt"><span class="ico" data-i="refresh"></span><h3>Contract to hire</h3><p>Work with someone on a contract first, then offer a permanent role when both sides are sure.</p></article>
+      <article class="card tilt"><span class="ico" data-i="users"></span><h3>Dedicated team</h3><p>A group of people assigned to your work on an ongoing basis, managed day to day with your team.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band band-white">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Staffing brief</span>
+      <h2>Draft your request in a minute</h2>
+      <p>Fill in the basics and we will turn them into a short brief you can send to the team. Pricing and terms are agreed in a conversation, not in this form.</p>
+      <ul class="checklist">
+        <li><span data-i="check"></span> Clear scope before anyone starts</li>
+        <li><span data-i="check"></span> Attendance and leave recorded the same way as your own staff</li>
+        <li><span data-i="check"></span> Regular check-ins on how the engagement is going</li>
+      </ul>
+    </div>
+    <div class="formcard">
+      <form id="briefForm" novalidate>
+        <div class="field full"><label for="bRole">Role or skill needed</label><input id="bRole" placeholder="For example, customer support agent"><span class="err" id="eRole"></span></div>
+        <div class="field"><label for="bCount">People needed</label><input id="bCount" type="number" min="1" max="500" value="3"><span class="err" id="eCount"></span></div>
+        <div class="field"><label for="bDur">Duration (months)</label><input id="bDur" type="number" min="1" max="60" value="6"><span class="err" id="eDur"></span></div>
+        <div class="field"><label for="bModel">Engagement type</label>
+          <select id="bModel"><option value="">Choose one</option><option>Temporary and project</option><option>Contract to hire</option><option>Dedicated team</option></select><span class="err" id="eModel"></span></div>
+        <div class="field"><label for="bStart">Target start date</label><input id="bStart" type="date"><span class="err" id="eStart"></span></div>
+        <div class="field full"><label for="bNotes">Notes (optional)</label><textarea id="bNotes" style="min-height:90px"></textarea></div>
+        <div class="form-foot"><button class="btn btn-primary" type="submit">Create brief</button><small>Nothing is sent from this page.</small></div>
+        <div class="result" hidden aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="band cta-band">
+  <div class="wrap cta-inner">
+    <h2>Prefer to talk it through?</h2>
+    <a class="btn btn-primary" href="contact.html">Contact us <span data-i="arrow"></span></a>
+  </div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+<script src="app.js"></script>
+</body></html>

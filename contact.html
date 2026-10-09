@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact Hire Via Global</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1>Tell us what your team needs</h1>
+    <p>Share a few details and say which service you are interested in.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap split narrow-left">
+    <div>
+      <h2>Get in touch</h2>
+      <p>We reply to enquiries with a suggested next step and the questions we need answered to scope the work.</p>
+      <ul class="details">
+        <li><span data-i="pin"></span><div><b>Office address</b><span class="ph">[Add office address]</span></div></li>
+        <li><span data-i="phone"></span><div><b>Phone</b><span class="ph">[Add phone number]</span></div></li>
+        <li><span data-i="mail"></span><div><b>Email</b><span class="ph">[Add business email]</span></div></li>
+      </ul>
+    </div>
+    <div class="formcard">
+      <form id="contactForm" novalidate>
+        <div class="field"><label for="fName">Full name</label><input id="fName" autocomplete="name"><span class="err" id="eName"></span></div>
+        <div class="field"><label for="fEmail">Business email</label><input id="fEmail" type="email" autocomplete="email"><span class="err" id="eEmail"></span></div>
+        <div class="field"><label for="fPhone">Phone number</label><input id="fPhone" type="tel" autocomplete="tel"><span class="err" id="ePhone"></span></div>
+        <div class="field"><label for="fCompany">Company name</label><input id="fCompany" autocomplete="organization"><span class="err" id="eCompany"></span></div>
+        <div class="field full"><label for="fService">Service required</label>
+          <select id="fService">
+            <option value="">Choose a service</option>
+            <option>HR Consulting</option>
+            <option>Recruitment and Talent Acquisition</option>
+            <option>Staffing Solutions</option>
+            <option>Employee Management</option>
+            <option>Attendance and Leave Management</option>
+            <option>KPI and Performance Management</option>
+            <option>Payroll and Reporting</option>
+          </select><span class="err" id="eService"></span></div>
+        <div class="field full"><label for="fMsg">Message</label><textarea id="fMsg"></textarea><span class="err" id="eMsg"></span></div>
+        <div class="form-foot"><button class="btn btn-primary" type="submit">Request callback</button><small>All fields are required.</small></div>
+        <div class="result" hidden aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+<script src="app.js"></script>
+</body></html>

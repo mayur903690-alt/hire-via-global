@@ -1,0 +1,12 @@
+{
+  "name": "hire-via-global",
+  "version": "1.0.0",
+  "description": "Hire Via Global website with a shared job board",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

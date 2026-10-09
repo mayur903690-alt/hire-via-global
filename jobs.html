@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jobs at Hire Via Global</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body data-page="jobs">
+<div id="site-header"></div>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Jobs</span>
+    <h1>Find your next job, or hire your next team member</h1>
+    <p>Browse open roles in any country, apply in a minute, or post a vacancy and let our team handle the applications.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="banner" id="banner" role="status" hidden></div>
+
+    <div class="tabs" role="tablist" aria-label="Jobs">
+      <button class="tab" role="tab" id="tabFind" aria-selected="true" aria-controls="panFind" type="button">Find a job</button>
+      <button class="tab" role="tab" id="tabHire" aria-selected="false" aria-controls="panHire" type="button">Hire talent</button>
+    </div>
+
+    <div id="panFind" role="tabpanel" aria-labelledby="tabFind">
+      <div class="filters">
+        <div class="field"><label for="qText">Keyword</label><input id="qText" type="search" placeholder="Job title, company or skill"></div>
+        <div class="field"><label for="qCountry">Country</label><select id="qCountry"></select></div>
+        <div class="field"><label for="qType">Job type</label><select id="qType"></select></div>
+        <div class="field chk"><label><input id="qSaved" type="checkbox"> Saved jobs only</label></div>
+        <div class="field"><button class="btn btn-ghost" id="qClear" type="button">Clear filters</button></div>
+      </div>
+      <p class="result-count" id="resultCount" aria-live="polite"></p>
+      <div class="job-list" id="results"></div>
+    </div>
+
+    <div id="panHire" role="tabpanel" aria-labelledby="tabHire" hidden>
+      <div class="split">
+        <div class="formcard">
+          <h2 style="font-size:1.4rem;margin-bottom:6px">Post a job</h2>
+          <p class="tool-note">Describe the role. Applications go to the Hire Via Global team, who review candidates and get back to you.</p>
+          <form id="postForm" novalidate>
+            <div class="field"><label for="pTitle">Job title</label><input id="pTitle" maxlength="80"><span class="err" id="ePTitle"></span></div>
+            <div class="field"><label for="pCompany">Company</label><input id="pCompany" maxlength="80" autocomplete="organization"><span class="err" id="ePCompany"></span></div>
+            <div class="field"><label for="pCountry">Country</label><select id="pCountry"></select><span class="err" id="ePCountry"></span></div>
+            <div class="field"><label for="pCity">City (optional)</label><input id="pCity" maxlength="60"><span class="err" id="ePCity"></span></div>
+            <div class="field"><label for="pType">Job type</label><select id="pType"><option value="">Choose a type</option></select><span class="err" id="ePType"></span></div>
+            <div class="field"><label for="pSalary">Pay note (optional)</label><input id="pSalary" maxlength="60" placeholder="For example, negotiable"><span class="err" id="ePSalary"></span></div>
+            <div class="field full"><label for="pDesc">Description</label><textarea id="pDesc" maxlength="2000" placeholder="Responsibilities, required skills and anything candidates should know."></textarea><span class="err" id="ePDesc"></span></div>
+            <div class="form-foot"><button class="btn btn-primary" id="postBtn" type="submit">Post job</button><small id="postStatus" aria-live="polite"></small></div>
+          </form>
+        </div>
+        <div>
+          <h2 style="font-size:1.4rem;margin-bottom:12px">Your postings</h2>
+          <div class="my-list" id="myJobs"></div>
+          <details id="staffBox" class="staff-box" hidden>
+            <summary id="staffSummary">Staff sign-in</summary>
+            <div id="staffBody"></div>
+          </details>
+          <div id="appsSection" hidden style="margin-top:28px">
+            <h2 style="font-size:1.4rem;margin-bottom:6px">Applications received</h2>
+            <p class="tool-note">Visible only to the site's editors.</p>
+            <div class="my-list" id="appsList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.27/topojson.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.9/datamaps.world.min.js"></script>
+<script src="app.js"></script>
+<script src="world.js"></script>
+<script src="seed.js"></script>
+<script src="board.js"></script>
+<script src="jobs.js"></script>
+</body></html>

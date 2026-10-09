@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recruitment at Hire Via Global</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body data-page="recruitment">
+<div id="site-header"></div>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Recruitment</span>
+    <h1>Hire with a process you can see</h1>
+    <p>Every candidate moves through the same stages, and every move is recorded. You always know where a hire stands and what happens next.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The pipeline</span>
+      <h2>Six stages from application to joining</h2>
+      <p>Select a stage to see what happens, who is responsible and what you receive.</p>
+    </div>
+    <ul class="pipe" id="pipe"></ul>
+    <div class="stage-panel" aria-live="polite">
+      <div>
+        <small id="pCount" style="color:var(--muted);font-weight:600"></small>
+        <h3 id="pStage"></h3>
+        <p id="pText"></p>
+        <div class="bar-track" aria-hidden="true"><div class="bar-fill" id="pBar"></div></div>
+      </div>
+      <dl>
+        <div><dt>Responsible</dt><dd id="pOwner"></dd></div>
+        <div><dt>You receive</dt><dd id="pOut"></dd></div>
+      </dl>
+    </div>
+    <p style="color:var(--muted);margin-top:14px;font-size:0.92rem">At any stage a candidate can also be marked Rejected or Withdrawn. The reason is recorded.</p>
+  </div>
+</section>
+
+<section class="band band-white">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What is included</span>
+      <h2>Recruitment from brief to onboarding</h2>
+    </div>
+    <div class="grid">
+      <article class="card tilt"><span class="ico" data-i="message"></span><h3>Role brief</h3><p>We agree the title, responsibilities, must-have skills and salary range before searching.</p></article>
+      <article class="card tilt"><span class="ico" data-i="search"></span><h3>Sourcing and screening</h3><p>We find candidates, check them against the brief and record where each one came from.</p></article>
+      <article class="card tilt"><span class="ico" data-i="calendar"></span><h3>Interview scheduling</h3><p>Interviews are booked with your team, with feedback collected on one form.</p></article>
+      <article class="card tilt"><span class="ico" data-i="chart"></span><h3>Hiring reports</h3><p>See time to hire, the stage where candidates drop out and which sources work best.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Questions</span><h2>Recruitment FAQ</h2></div>
+    <div class="faq">
+      <details><summary>How long does a hire usually take?</summary><p>It depends on the role, the market and how quickly interviews can be arranged. We agree a target timeline in the role brief and report against it.</p></details>
+      <details><summary>Can I see candidates before they are shortlisted?</summary><p>Yes. You can see the list at any stage. Shortlisting simply marks the candidates we recommend you interview.</p></details>
+      <details><summary>How is candidate information protected?</summary><p>Candidate details and CVs are shared only with the people involved in the hire, and are kept only as long as needed.</p></details>
+      <details><summary>Can you hire for several roles at once?</summary><p>Yes. Each role has its own brief and pipeline, so progress is tracked separately.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="band cta-band">
+  <div class="wrap cta-inner">
+    <h2>Have a role to fill?</h2>
+    <a class="btn btn-primary" href="contact.html">Start a hire <span data-i="arrow"></span></a>
+  </div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+<script src="app.js"></script>
+</body></html>
